@@ -8,8 +8,8 @@ echo "<!DOCTYPE HTML>
 </html>
 ";
 $phrase  = "3++45-48*67%3|&4";
-$healthy = array("+", "-", "*", "%","|","&");
-$yummy   = array("<span style=\"color: red\">+</span>", "<span style=\"color: red\">-</span>", "<span style=\"color: red\">*</span>", "<span style=\"color: red\">%</span>","<span style=\"color: red\">!</span>","<span style=\"color: red\">|</span>","<span style=\"color: red\">&</span>");
-$newphrase = str_replace($healthy, $yummy, $phrase);
+$h = array("+", "-", "*", "%","|","&");
+$y   = array("<span style=\"color: red\">+</span>", "<span style=\"color: red\">-</span>", "<span style=\"color: red\">*</span>", "<span style=\"color: red\">%</span>","<span style=\"color: red\">!</span>","<span style=\"color: red\">|</span>","<span style=\"color: red\">&</span>");
+$newphrase = str_replace($h, $y, $phrase);
 echo $newphrase;
 ?>
